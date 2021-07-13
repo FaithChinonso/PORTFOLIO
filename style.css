@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&family=Uchen&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-family: 'Raleway', 'Arial';
+    color: white;
+    
+}
+
+.btn1, .btn2, .btn3, .btn4 {
+    visibility: hidden;
+    position: absolute;
+}
+.arrow-down::after {
+     content: "";
+     width: 2rem;
+     height: 2rem;
+     position: absolute;
+     margin: auto;
+     left: 0;
+     right: 0;
+     bottom: 15px;
+     border-right: 2px solid white;
+     border-bottom: 2px solid white;
+     transform: rotate(45deg);
+}
+
+
+#div1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 90%;
+    width: 90%;
+    padding: 2rem;
+}
+.glass {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-top: .5px solid rgba(7, 7, 7,0.5) ;
+    box-shadow: 20px 20px 50px rgb(10, 10, 39);
+    border-radius: 10px;
+
+}
+h1 {
+    color: white;
+    font-size: 3rem;
+    text-shadow: 3px 3px 5px rgb(6, 6, 51);
+}
+#div1 i {
+    color: white;
+    text-shadow: 3px 3px 5px rgb(6, 6, 51);
+    font-size: 2.5rem;
+}
+p {
+    color: white;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    text-shadow: 3px 3px 5px rgb(6, 6, 51);
+
+    
+}
+
+.img-div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+    background-color: rgb(6, 6, 51);
+
+}
+.img-div div img{
+    border-radius: 50%;
+
+}
+#div2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(img/bcg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+#div2 .container {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    height: 70%;
+    box-shadow: 10px 10px 20px rgba(30, 16, 56, 0.5);
+    border-top: .5px solid rgba(248, 248, 248, 0.5);
+    border-left: .5px solid rgba(248, 248, 248, 0.5);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#div2 .container img {
+    width: 6rem;
+    height: 6rem;
+}
+#div3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    background-blend-mode: multiply;
+    background-color: rgba(12, 12, 12, 0.8);
+    background-image: url(img/bcg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: auto;
+}
+#div3 .skills img {
+    width: 9rem;
+    height: 9rem;
+
+}
+#div3 h1 {
+    margin: .5rem;
+}
+#skill-set {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    overflow: auto;
+
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(10, 0, 0);
+    border-top: 2px solid rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgb(22, 20, 20);
+    background-color: rgba(7, 2, 2, 0.3);
+}
+.skills .pcontent {
+    text-align: center;
+}
+h3 {
+    font-size: 2.2rem;
+}
+#div4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-image: url(img/bcg4.jpg);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: auto;
+    gap: 1rem;
+
+}
+.overall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/bcg4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50%;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    transition: height 3s;
+    transition-delay: 2s;
+    position: absolute;
+    top: 0;
+    
+}
+.overall:hover {
+    height: 95%;
+    z-index: 1;
+}
+
+.overall h1 {
+    font-size: 3rem;
+    color: black;
+    text-shadow: 2px 2px 3px rgb(6, 6, 51);
+    
+}
+.overall p {
+    font-size: 2rem;
+    color: black;
+    text-shadow: 1px 1px 2px rgb(6, 6, 51);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+    height: 70%;
+    width: 80%;
+}
+
+input, textarea {
+    padding: .5rem;
+    width: 100%;
+    font-size: 2rem;
+    background-color: rgb(94, 92, 92);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+textarea {
+    height: 30%;
+    font-family: inherit;
+}
+input::placeholder, textarea::placeholder {
+    color: rgb(152, 149, 180);
+    font-size: 2rem;
+}
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(17, 13, 56);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: scale, 1s;
+    font-size: 2rem;
+}
+button:hover {
+    background: gray;
+    color: #000;
+}
+button:active {
+    transform: scale(.9);
+}
+button:focus, input:focus, textarea:focus {
+    outline: none;
+    background-color: rgb(41, 40, 40);
+    color: rgb(161, 158, 187);
+}
+.arrow-up::after {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    border-right: 2px solid rgb(56, 55, 55);
+    border-bottom: 2px solid rgb(48, 47, 47);
+    transform: rotate(225deg);
+}
+.socialmedia {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    background-image: url(img/bcg4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    transition: height 3s;
+    transition-delay: 2s;
+    height: 50%;
+}
+.socialmedia:hover {
+    height: 95%;
+    z-index: 1;
+}
+.socialmedia img {
+    width: 4rem;
+    height: 4rem;
+    
+}
+.socialmedia h3 {
+    font-size: 2rem;
+    color: black;
+    text-shadow: 2px 2px 3px rgb(6, 6, 51);
+}
+.socialmedia h1 {
+    font-size: 3rem;
+    color: black;
+}
+@media (max-width: 350px) {
+    html {
+        font-size: 8px;
+    }
+    .container {
+        height: 100vh;
+        width: 100%;
+        padding: 0;
+        gap: 2rem;
+    }
+    #div3 {
+        height: 100vh;
+    }
+    #skill-set {
+        justify-content: space-around;
+        height: 85%;
+    }
+}
+@media (min-width: 550px) {
+    html {
+        font-size: 10px;
+    }
+    .container {
+        height: 90%;
+        width: 60%;
+        gap: 3rem;
+    }
+    #div3 {
+        height: 100vh;
+        width: 100vw;
+    }
+    #skill-set {
+        display: flex;
+        flex-direction: row;
+        gap:2rem
+    }
+    .skills {
+        gap: 4rem;
+        width: 32%;
+    }
+    .overall {
+        width: 90%;
+    }
+    .overall h1 {
+        font-size: 3rem;
+    }
+    .overall p {
+        font-size: 1.5rem;
+    }
+    button {
+        font-size: 1rem;
+    }
+    input, textarea { 
+        font-size: 1.5rem;
+    }
+    input::placeholder, textarea::placeholder {
+        font-size: 1rem;
+    }
+    .arrow-down::after {
+        bottom: 40px;
+    }
+    .arrow-up::after {
+        bottom: 40px;
+    }
+}
+@media (min-width: 800px) {
+    html {
+        font-size: 13px;
+    }
+    .container {
+        height: 60%;
+        width: 60%;
+        gap: 2rem;
+    }
+    #div3 {
+        gap: 2rem;
+        height: 100vh;
+    }
+    #skill-set {
+        gap: 3rem;
+        display: flex;
+        flex-direction: row;
+    }
+    .skills {
+        gap: 2rem;
+        width: 32%;
+    }
+    #div4 {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        width: 100vw;
+        background-image: url(img/bcg4.jpg);
+        background-size: cover;
+    }
+    .overall {
+        height: 100%;
+        width: 35%;
+        transition-property: width;
+        transition-duration: 5s;
+        transition-delay: 2s;
+        gap: .5rem;
+        left: 0;
+        position: absolute;
+    }
+    .overall:hover {
+       width: 65%;
+       height: 100%;
+    }
+    .overall p {
+        font-size: 1rem;
+        color: white;
+        text-shadow: 1px 1px 3px rgb(6, 6, 51);
+    }
+    .overall h1 {
+        font-size: 2rem;
+        color: white;
+        text-shadow: 1px 1px 3px rgb(6, 6, 51);
+    }
+    button {
+        font-size: 1rem;
+    }
+    input, textarea { 
+        font-size: 1.5rem;
+    }
+    form {
+        gap: 1rem;
+        padding: .2rem;
+        height: 80%;
+    }
+    textarea {
+        height: 40%;
+    }
+    input::placeholder, textarea::placeholder {
+        font-size: 1.5rem;
+        color: rgb(139, 127, 243);
+    }
+    .arrow-down::after {
+        bottom: 40px;
+    }
+    .arrow-up::after {
+        bottom: 40px;
+    }
+    .socialmedia {
+       width: 35%;
+       height: 100%;
+       transition: width 3s;
+       transition-delay: 2s;
+       position: absolute;
+       right: 0;
+   }
+   .socialmedia:hover {
+       width: 65%;
+       height: 100%;
+   }
+}
